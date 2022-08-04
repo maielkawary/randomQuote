@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import Quote from './components/Quote';
+import quotes from './Quote.json'
+import { useState } from 'react';
 
-function App() {
+
+const App = () => {
+
+  const myJson = JSON.parse(JSON.stringify(quotes));
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <body style={{backgroundColor: "blue"}}>
+    <div style={{backgroundColor: "blue"}}>
+      <Quote myQuotes={myJson}/>
     </div>
-  );
+    </body>);
 }
 
 export default App;

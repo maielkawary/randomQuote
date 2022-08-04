@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', monospace;
+} 
+#container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h4{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+  display: inline;
+  color:#2f3031;
+}
+#author{
+  color: rgb(40, 40, 81);
+  text-align: right;
+}
+#wrapper{
+  padding: 30px;
+  width: 70%;
+  border-radius: 3%;
+  background-color: rgb(242, 247, 217);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btn btn-light{
+  color: rgb(123, 29, 29);
+
+}
+button{
+  color: gray;
+}
